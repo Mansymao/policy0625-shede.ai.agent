@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>政策资金项目申报通知汇总（2026年6月10日-6月25日）</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; background: #f5f7fa; color: #333; line-height: 1.7; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+  header { background: linear-gradient(135deg, #1a3a6e 0%, #2d5ba8 100%); color: #fff; padding: 40px 30px; border-radius: 12px; margin-bottom: 30px; }
+  header h1 { font-size: 26px; margin-bottom: 8px; }
+  header p { font-size: 14px; opacity: 0.85; margin-top: 4px; }
+  .summary-bar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
+  .summary-card { background: #fff; border-radius: 10px; padding: 16px 18px; flex: 1; min-width: 110px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); text-align: center; }
+  .summary-card .num { font-size: 30px; font-weight: 700; color: #2d5ba8; }
+  .summary-card .label { font-size: 12px; color: #666; margin-top: 2px; }
+  .region-section { background: #fff; border-radius: 12px; margin-bottom: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow: hidden; }
+  .region-header { background: #eef3fb; padding: 16px 24px; border-bottom: 1px solid #dde6f0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+  .region-header h2 { font-size: 19px; color: #1a3a6e; }
+  .region-header .badge { background: #2d5ba8; color: #fff; font-size: 12px; padding: 3px 12px; border-radius: 20px; }
+  .region-header .arrow { font-size: 18px; transition: transform 0.3s; color: #999; }
+  .region-header.collapsed .arrow { transform: rotate(-90deg); }
+  .region-body { padding: 0; }
+  .dept-block { border-bottom: 1px solid #f0f0f0; }
+  .dept-block:last-child { border-bottom: none; }
+  .dept-title { padding: 14px 24px 6px; font-size: 15px; font-weight: 600; color: #444; display: flex; align-items: center; gap: 8px; }
+  .dept-title .icon { width: 5px; height: 20px; background: #2d5ba8; border-radius: 3px; }
+  table { width: 100%; border-collapse: collapse; }
+  th { background: #f8fafd; font-size: 12.5px; color: #666; font-weight: 600; text-align: left; padding: 9px 14px; border-bottom: 2px solid #e8edf5; }
+  td { padding: 11px 14px; font-size: 13.5px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover { background: #f8fafd; }
+  td a { color: #2d5ba8; text-decoration: none; word-break: break-all; }
+  td a:hover { text-decoration: underline; }
+  .tag { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 4px; white-space: nowrap; }
+  .tag-fund { background: #e6f7ee; color: #1a9e5a; }
+  .tag-project { background: #e3f2fd; color: #1565c0; }
+  .tag-collect { background: #fff3e0; color: #e67e22; }
+  .tag-deadline { background: #fce4ec; color: #c62828; }
+  .no-data { padding: 14px 24px; color: #999; font-style: italic; font-size: 13px; }
+  .note { background: #fffde7; border-left: 4px solid #fbc02d; padding: 12px 18px; margin: 12px 24px; border-radius: 0 8px 8px 0; font-size: 12.5px; color: #666; }
+  footer { text-align: center; padding: 28px; color: #999; font-size: 12px; }
+  .filter-info { background: #e8f5e9; border-radius: 8px; padding: 12px 20px; margin-bottom: 24px; font-size: 13px; color: #2e7d32; }
+  @media (max-width: 768px) {
+    .container { padding: 10px; }
+    header { padding: 20px 14px; }
+    header h1 { font-size: 18px; }
+    th, td { padding: 7px 8px; font-size: 12px; }
+    .summary-card .num { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>资金 / 项目申报通知汇总</h1>
+  <p>统计时段：2026年6月10日 — 6月25日</p>
+  <p>覆盖：国家级 + 山东、北京、浙江、四川、上海、福建、广东、江苏、河南（共10个层级）</p>
+  <p>部门：发改委、经信厅（局/委）、科技厅（委）、文旅厅（局）</p>
+</header>
+
+<div class="filter-info">
+  <strong>筛选说明：</strong>仅保留新发起的"资金申报""项目申报""征集申报"类通知，已剔除结果公示、名单公布、政策文件、征求意见、评价认定、案例征集等。
+</div>
+
+<div class="summary-bar">
+  <div class="summary-card"><div class="num">5</div><div class="label">国家级</div></div>
+  <div class="summary-card"><div class="num">4</div><div class="label">山东</div></div>
+  <div class="summary-card"><div class="num">13</div><div class="label">北京</div></div>
+  <div class="summary-card"><div class="num">4</div><div class="label">浙江</div></div>
+  <div class="summary-card"><div class="num">9</div><div class="label">四川</div></div>
+  <div class="summary-card"><div class="num">2</div><div class="label">上海</div></div>
+  <div class="summary-card"><div class="num">1</div><div class="label">福建</div></div>
+  <div class="summary-card"><div class="num">6</div><div class="label">广东</div></div>
+  <div class="summary-card"><div class="num">6</div><div class="label">江苏</div></div>
+  <div class="summary-card"><div class="num">3</div><div class="label">河南</div></div>
+</div>
+
+<!-- ============ 国家级 ============ -->
+<div class="region-section">
+  <div class="region-header" onclick="toggle(this)">
+    <h2>一、国家级</h2>
+    <div><span class="badge">5条</span> <span class="arrow">&#9660;</span></div>
+  </div>
+  <div class="region-body">
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>国家发展和改革委员会</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-fund">资金申报</span>关于开展重点行业节能降碳改造攻坚三年行动的通知（发改环资〔2026〕698号，五部门联合，涉及中央预算内投资、超长期特别国债等多渠道资金支持）</td>
+          <td>06-15</td>
+          <td><a href="https://www.ndrc.gov.cn/xwdt/tzgg/202606/t20260615_1405854.html" target="_blank">查看原文</a></td>
+        </tr>
+      </table>
+      <div class="note">发改委6月18日宣布6月底前下达全部2000亿元设备更新项目清单（1.1万多个项目）及第三批625亿元消费品以旧换新资金。</div>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>工业和信息化部</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-fund">资金申报</span>三部门关于组织开展2026年首批次新材料保险补偿资金申请工作的通知（工信厅联原〔2026〕22号，保费补偿最高80%）</td>
+          <td>06-18</td>
+          <td><a href="https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_38ee26e680994289a8b1bc9109ff19bf.html" target="_blank">查看原文</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-project">项目申报</span>科技司关于开展2026年知识产权推进计划项目申报工作的通知（工科函〔2026〕606号）</td>
+          <td>06-01</td>
+          <td><a href="https://wap.miit.gov.cn/jgsj/kjs/jscx/zscqhcggl/art/2026/art_10a2737ebb1546c7b75a4ec9dffb7814.html" target="_blank">查看原文</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>科学技术部</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-fund">基金申报</span>关于征集2026年度国家科学技术学术著作出版基金项目的通知（申报截止7月13日）</td>
+          <td>06-16</td>
+          <td><a href="http://www.most.gov.cn/tztg/202606/t20260616_196787.html" target="_blank">查看原文</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-project">项目申报</span>新一代人工智能国家科技重大专项2026年度第一批公开项目申报指南（申报截止7月17日16:00）</td>
+          <td>06-17</td>
+          <td><a href="https://www.gdaas.cn/tzggn/zytz/content/post_1330276.html" target="_blank">查看（各省转发）</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>文化和旅游部</div>
+      <div class="no-data">该时段内未发布新的申报类通知。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 山东省 ============ -->
+<div class="region-section">
+  <div class="region-header" onclick="toggle(this)">
+    <h2>二、山东省</h2>
+    <div><span class="badge">4条</span> <span class="arrow">&#9660;</span></div>
+  </div>
+  <div class="region-body">
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>山东省发展和改革委员会</div>
+      <div class="no-data">该时段内未搜索到申报类通知。建议访问 <a href="http://fgw.shandong.gov.cn" target="_blank">官网</a> 核实。</div>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>山东省工业和信息化厅</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-deadline">截止6/30</span>关于组织开展2026年度山东省首台（套）技术装备、首批次新材料、首版次高端软件保险补偿资格审定申报工作的通知（最高补偿500万元，保费补贴最高80%）</td>
+          <td>06-08</td>
+          <td><a href="http://gxt.shandong.gov.cn/col/col15201/" target="_blank">官网栏目</a></td>
+        </tr>
+      </table>
+      <div class="note">此前发布的"工业领域设备更新和技术改造奖补资金项目申报"截止6月15日，如尚未申报需尽快联系。</div>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>山东省科学技术厅</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-project">项目申报</span>关于2026年度山东省科学技术奖提名工作的通知（提名系统6月18日开放，网络提交截止7月30日）</td>
+          <td>~06-11</td>
+          <td><a href="http://kjt.shandong.gov.cn" target="_blank">官网首页</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-project">赛事申报</span>关于印发《第十五届中国创新创业大赛山东赛区大赛实施方案》的通知</td>
+          <td>06-12</td>
+          <td><a href="http://kjt.shandong.gov.cn/art/2026/6/12/art_13360_10325718.html" target="_blank">查看原文</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>山东省文化和旅游厅</div>
+      <div class="no-data">该时段内未搜索到申报类通知。此前发布的"文旅研究课题申报"（截止6/30）仍在申报期。建议访问 <a href="http://whhly.shandong.gov.cn" target="_blank">官网</a> 核实。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 北京市 ============ -->
+<div class="region-section">
+  <div class="region-header" onclick="toggle(this)">
+    <h2>三、北京市</h2>
+    <div><span class="badge">13条</span> <span class="arrow">&#9660;</span></div>
+  </div>
+  <div class="region-body">
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>北京市发展和改革委员会</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-project">试点申报</span>关于组织开展"人工智能+"能源融合试点申报工作的通知</td>
+          <td>06-15</td>
+          <td><a href="https://fgw.beijing.gov.cn/gzdt/tztg/" target="_blank">通知通告栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-collect">征集申报</span>等4部门关于征集本市2026年应用场景需求、场景能力和示范项目3张清单的通知（京发改〔2026〕989号）</td>
+          <td>06-22</td>
+          <td><a href="https://www.beijing.gov.cn/zhengce/zhengcefagui/202606/t20260622_4710260.html" target="_blank">查看原文</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-project">试点申报</span>关于组织开展地热能高质量开发利用试点工作的通知</td>
+          <td>06-22</td>
+          <td><a href="https://fgw.beijing.gov.cn/fgwzwgk/2024zcwj/" target="_blank">政策文件栏目</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>北京市经济和信息化局</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-collect">征集申报</span>关于开展"揭榜挂帅"需求征集工作的通知</td>
+          <td>06-10</td>
+          <td><a href="https://jxj.beijing.gov.cn/zwgk/2024zcwj/" target="_blank">政策文件栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-collect">征集申报</span>关于开展2026年度市级绿色工厂和绿色工业园区征集工作的通知</td>
+          <td>06-11</td>
+          <td><a href="https://www.beijing.gov.cn/zhengce/zhengcefagui/202606/t20260612_4697527.html" target="_blank">查看原文</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-collect">征集申报</span>关于开展2026年度人形机器人与具身智能实景实训专项行动申报材料征集工作的通知</td>
+          <td>06-12</td>
+          <td><a href="http://www.beinet.net.cn/zcfg/zcfb/bj/202606/t14458002.html" target="_blank">查看转载</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>北京市科学技术委员会 / 中关村管委会</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-project">赛事申报</span>第十五届中国创新创业大赛北京赛区启动公告</td>
+          <td>06-10</td>
+          <td><a href="https://kw.beijing.gov.cn/zwgk/zcwj/" target="_blank">政策文件栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-collect">征集申报</span>关于征集2026年度疾病攻关创新联合体研究任务的通知</td>
+          <td>06-10</td>
+          <td><a href="https://kw.beijing.gov.cn/zwgk/zcwj/" target="_blank">政策文件栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-collect">征集申报</span>中关村管委会关于征集2026年算力星座技术创新方向储备课题的通知</td>
+          <td>06-11</td>
+          <td><a href="https://www.huiqiyidiantong.com/content/185/36812" target="_blank">查看转载</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-project">项目申报</span>国家重点研发计划"政府间国际科技创新合作"重点专项2026年度第二批联合研发项目申报</td>
+          <td>06-12</td>
+          <td><a href="https://kw.beijing.gov.cn/zwgk/zcwj/" target="_blank">政策文件栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-fund">资金申报</span>关于开展2026年中关村国家自主创新示范区科技型小微企业关键技术创新支持项目申报的通知</td>
+          <td>06-19</td>
+          <td><a href="https://www.beijing.gov.cn/so/zcdh/zjtx" target="_blank">最新政策栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-project">项目申报</span>关于转发新一代人工智能国家科技重大专项2026年度第一批公开项目申报指南的通知</td>
+          <td>06-23</td>
+          <td><a href="https://kw.beijing.gov.cn/zwgk/zcwj/202606/t20260623_4711352.html" target="_blank">查看原文</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>北京市文化和旅游局</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-fund">资金申报</span>北京市推动演艺高质量发展支持办法（2026年度精品演出类项目第二批次）申报公告</td>
+          <td>06-11</td>
+          <td><a href="https://whlyj.beijing.gov.cn/zwgk/" target="_blank">政务公开栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-deadline">截止6/30</span>关于开展2026年度重点文旅项目征集工作的通知（科技创新、文商旅体融合等七大领域，可申报品牌奖励、贷款贴息）</td>
+          <td>06-15</td>
+          <td><a href="https://whlyj.beijing.gov.cn/zwgk/" target="_blank">政务公开栏目</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 浙江省 ============ -->
+<div class="region-section">
+  <div class="region-header" onclick="toggle(this)">
+    <h2>四、浙江省</h2>
+    <div><span class="badge">4条</span> <span class="arrow">&#9660;</span></div>
+  </div>
+  <div class="region-body">
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>浙江省发展和改革委员会</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-project">遴选申报</span>关于开展浙江省人工智能+典型应用场景遴选工作的通知</td>
+          <td>~06-24</td>
+          <td><a href="https://www.xclcy.com/9155.html" target="_blank">查看转载</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>浙江省经济和信息化厅</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-project">申报建设</span>关于组织开展2026年度省重点企业研究院、省企业研究院申报建设工作的通知</td>
+          <td>~06-10</td>
+          <td><a href="https://jxt.zj.gov.cn/col/col1229886900/" target="_blank">文件通知栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-collect">征集申报</span>关于开展"人工智能+制造"典型应用场景征集工作的通知</td>
+          <td>06-10</td>
+          <td><a href="https://jxt.zj.gov.cn/col/col1229886900/" target="_blank">文件通知栏目</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>浙江省科学技术厅</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-project">项目申报</span>关于组织申报新一代人工智能国家科技重大专项2026年度第一批公开项目的通知</td>
+          <td>06-23</td>
+          <td><a href="http://kjt.zj.gov.cn" target="_blank">官网首页</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>浙江省文化广电和旅游厅</div>
+      <div class="no-data">该时段内未搜索到资金/项目申报类通知。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 四川省 ============ -->
+<div class="region-section">
+  <div class="region-header" onclick="toggle(this)">
+    <h2>五、四川省</h2>
+    <div><span class="badge">9条</span> <span class="arrow">&#9660;</span></div>
+  </div>
+  <div class="region-body">
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>四川省发展和改革委员会</div>
+      <div class="no-data">该时段内未搜索到申报类通知。（6月18日发布的绿色低碳政策措施为政策文件，非申报通知。）</div>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>四川省经济和信息化厅</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-collect">征集申报</span>关于征集"中小企业特色产业集群"融资服务专属计划的通知</td>
+          <td>06-15</td>
+          <td><a href="https://jxt.sc.gov.cn/scjxt/wjfb/common_list.shtml" target="_blank">文件发布栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-deadline">延期申报</span>关于延长企业技术中心运行评价线上申报时间的通知</td>
+          <td>06-22</td>
+          <td><a href="https://jxt.sc.gov.cn/scjxt/wjfb/common_list.shtml" target="_blank">文件发布栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-project">赛事申报</span>关于举办第十一届"创客中国"四川省中小企业创新创业大赛的通知</td>
+          <td>06-22</td>
+          <td><a href="https://jxt.sc.gov.cn/scjxt/wjfb/common_list.shtml" target="_blank">文件发布栏目</a></td>
+        </tr>
+      </table>
+      <div class="note">此前发布的"产业重点领域重要产品和关键核心技术攻关任务揭榜"（5月29日发布）申报截止7月2日，仍在申报期内。<a href="https://jxt.sc.gov.cn/scjxt/wjfb/2026/5/29/9ddd561bd7684f6a8ead78de2b284bc3.shtml" target="_blank">查看原文</a></div>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>四川省科学技术厅</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-collect">征集申报</span>关于征集科技领域标志性重大场景新技术新产品示范推广应用项目需求的通知（单条项目经费最高300万元）</td>
+          <td>06-10</td>
+          <td><a href="https://kjt.sc.gov.cn/kjt/gstz/2026/6/10/beab24ce629c4b13a19bf91f67545b28.shtml" target="_blank">查看原文</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-project">项目申报</span>关于发布2026年度第二批软科学项目申报指南的通知</td>
+          <td>06-14</td>
+          <td><a href="https://kjt.sc.gov.cn/kjt/gstz/common_list.shtml" target="_blank">通知公告栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-deadline">截止7/3</span>关于组织申报2026年度四川省企业研发投入补助的通知（最高300万元，线上申报截止7月3日18:00）</td>
+          <td>~06-12</td>
+          <td><a href="https://kjt.sc.gov.cn/kjt/gstz/common_list.shtml" target="_blank">通知公告栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-project">申报备案</span>关于组织开展2026年度四川省瞪羚企业申报备案工作的通知</td>
+          <td>06-23</td>
+          <td><a href="https://kjt.sc.gov.cn/kjt/gstz/common_list.shtml" target="_blank">通知公告栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-project">项目申报</span>关于申报2026年度川渝科技创新合作计划项目的通知</td>
+          <td>~06-12</td>
+          <td><a href="https://kjt.sc.gov.cn/kjt/gstz/common_list.shtml" target="_blank">通知公告栏目</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>四川省文化和旅游厅</div>
+      <div class="no-data">该时段内未发布申报类通知。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 上海市 ============ -->
+<div class="region-section">
+  <div class="region-header" onclick="toggle(this)">
+    <h2>六、上海市</h2>
+    <div><span class="badge">2条</span> <span class="arrow">&#9660;</span></div>
+  </div>
+  <div class="region-body">
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>上海市发展和改革委员会</div>
+      <div class="no-data">该时段内发布的为资金下达/公示，无新发起的申报通知。</div>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>上海市经济和信息化委员会</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-deadline">截止7/31</span>关于开展2026年度上海市中试平台培育储备征集申报工作的通知</td>
+          <td>06-17</td>
+          <td><a href="https://sheitc.sh.gov.cn/cyfz/20260617/ee408bac186a4f75be37fd517123e627.html" target="_blank">查看原文</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-collect">征集申报</span>关于开展2026年度人形机器人与具身智能实景实训专项行动申报材料征集工作的通知</td>
+          <td>06-16</td>
+          <td><a href="https://sheitc.sh.gov.cn/gg/20260616/92f5e1838e7a4d028e2c1a0e9a65ecea.html" target="_blank">查看原文</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>上海市科学技术委员会</div>
+      <div class="no-data">该时段内未搜索到资金/项目申报类通知。</div>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>上海市文化和旅游局</div>
+      <div class="no-data">该时段内未搜索到资金/项目申报类通知。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 福建省 ============ -->
+<div class="region-section">
+  <div class="region-header" onclick="toggle(this)">
+    <h2>七、福建省</h2>
+    <div><span class="badge">1条</span> <span class="arrow">&#9660;</span></div>
+  </div>
+  <div class="region-body">
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>福建省发展和改革委员会</div>
+      <div class="no-data">该时段内未搜索到申报类通知。</div>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>福建省工业和信息化厅</div>
+      <div class="no-data">该时段内发布的均为资金/名单公示，无新发起的申报通知。</div>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>福建省科学技术厅</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-deadline">截止7/10</span>关于征集"揭榜挂帅"成果转化需求意向转化方的通知（11项成果，面向龙头骨干企业）</td>
+          <td>06-16</td>
+          <td><a href="http://kjt.fj.gov.cn/xxgk/tzgg/202606/t20260616_7163837.htm" target="_blank">查看原文</a></td>
+        </tr>
+      </table>
+      <div class="note">高新技术企业认定工作第二批截止7月21日，仍在申报期。<a href="https://kjt.fujian.gov.cn/xxgk/zfxxgkzl/zfxxgkml/yzdgkdqtxx/202604/t20260430_7133219.htm" target="_blank">查看原文</a></div>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>福建省文化和旅游厅</div>
+      <div class="no-data">该时段内未搜索到申报类通知。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 广东省 ============ -->
+<div class="region-section">
+  <div class="region-header" onclick="toggle(this)">
+    <h2>八、广东省</h2>
+    <div><span class="badge">6条</span> <span class="arrow">&#9660;</span></div>
+  </div>
+  <div class="region-body">
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>广东省发展和改革委员会</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-fund">资金申报</span>关于申报2027年度省级基建投资及配套补助资金的通知（面向各地市，含老区苏区等方向）</td>
+          <td>06-16</td>
+          <td><a href="https://drc.gd.gov.cn/ywtz/content/post_4912671.html" target="_blank">查看原文</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>广东省工业和信息化厅</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-fund">专项资金入库</span>关于开展省级制造业当家重点任务保障专项资金首台（套）重大技术装备研制与推广应用项目入库储备工作的通知（2027年度，区级审核推荐截止7月25日）</td>
+          <td>~06-23</td>
+          <td><a href="http://gdii.gd.gov.cn/xmzj1033/" target="_blank">项目资金栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-deadline">截止6/30</span>关于开展2026年度省级绿色工厂、绿色工业园区申报工作的通知</td>
+          <td>~06月初</td>
+          <td><a href="http://gdii.gd.gov.cn/xmzj1033/" target="_blank">项目资金栏目</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>广东省科学技术厅</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-project">项目申报</span>关于组织申报2027年广东省海外名师项目的通知（粤科函资字〔2026〕1158号）</td>
+          <td>06-23</td>
+          <td><a href="http://gdstc.gd.gov.cn/zwgk_n/tzgg/content/post_4915017.html" target="_blank">查看原文</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-collect">需求征集</span>关于征集量子技术产业应用需求的通知</td>
+          <td>06-10</td>
+          <td><a href="http://gdstc.gd.gov.cn/zwgk_n/tzgg/" target="_blank">通知公告栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-collect">成果征集</span>关于征集可面向新疆转移转化科技成果的通知</td>
+          <td>06-17</td>
+          <td><a href="http://gdstc.gd.gov.cn/zwgk_n/tzgg/" target="_blank">通知公告栏目</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>广东省文化和旅游厅</div>
+      <div class="no-data">该时段内未搜索到资金/项目申报类通知。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 江苏省 ============ -->
+<div class="region-section">
+  <div class="region-header" onclick="toggle(this)">
+    <h2>九、江苏省</h2>
+    <div><span class="badge">6条</span> <span class="arrow">&#9660;</span></div>
+  </div>
+  <div class="region-body">
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>江苏省发展和改革委员会</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-deadline">截止7/6</span>关于组织申报国家"人工智能+"能源高价值场景试点工作的通知（转发国家能源局部署）</td>
+          <td>06-03</td>
+          <td><a href="https://caifuhao.eastmoney.com/news/20260623163905577171420" target="_blank">查看报道</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>江苏省工业和信息化厅</div>
+      <div class="no-data">该时段内未搜索到新发起的省级资金项目申报通知。建议访问 <a href="https://gxt.jiangsu.gov.cn" target="_blank">官网</a> 核实。</div>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>江苏省科学技术厅</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-deadline">截止6/25</span>关于发布2026年度省前沿技术研发计划（现代农业）"揭榜挂帅"项目榜单的通知（省拨经费不超过300万元）</td>
+          <td>06-12</td>
+          <td><a href="https://kxjst.jiangsu.gov.cn/col/col82579/index.html" target="_blank">规划计划栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-project">遴选申报</span>关于组织遴选培育高能级新型研发机构的通知</td>
+          <td>06-12</td>
+          <td><a href="https://kxjst.jiangsu.gov.cn/col/col82540/index.html" target="_blank">通知公告栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-deadline">截止7/12</span>关于组织开展2026年"创新积分制"企业信息填报工作的通知（用于科技创新再贷款及贷款贴息政策支撑）</td>
+          <td>06-17</td>
+          <td><a href="https://kxjst.jiangsu.gov.cn/col/col82540/index.html" target="_blank">通知公告栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-deadline">截止7/31</span>关于组织开展2026年度江苏科技型企业孵化器申报工作的通知（标准/标杆/新业态三类）</td>
+          <td>06-23</td>
+          <td><a href="https://kxjst.jiangsu.gov.cn/col/col82540/index.html" target="_blank">通知公告栏目</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-project">项目申报</span>关于2025年度江苏省科学技术奖提名工作的通知（在线提名截止7月13日17:00）</td>
+          <td>~06-10</td>
+          <td><a href="https://kxjst.jiangsu.gov.cn/col/col82540/index.html" target="_blank">通知公告栏目</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>江苏省文化和旅游厅</div>
+      <div class="no-data">该时段内未搜索到申报类通知。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 河南省 ============ -->
+<div class="region-section">
+  <div class="region-header" onclick="toggle(this)">
+    <h2>十、河南省</h2>
+    <div><span class="badge">3条</span> <span class="arrow">&#9660;</span></div>
+  </div>
+  <div class="region-body">
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>河南省发展和改革委员会</div>
+      <div class="no-data">该时段内未搜索到申报类通知。</div>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>河南省工业和信息化厅</div>
+      <div class="no-data">该时段内未搜索到申报类通知。</div>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>河南省科学技术厅</div>
+      <table>
+        <tr><th style="width:48%">标题</th><th style="width:11%">发布日期</th><th>链接</th></tr>
+        <tr>
+          <td><span class="tag tag-project">项目申报</span>关于推荐申报新一代人工智能国家科技重大专项2026年度第一批公开项目的通知（系统受理6月23日-7月17日，省级推荐截止7月22日）</td>
+          <td>06-24</td>
+          <td><a href="http://kjt.henan.gov.cn/2026/06-24/3368794.html" target="_blank">查看原文</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-project">项目申报</span>河南省科技厅、省财政厅关于组织申报2026年度河南省国际科技合作交流项目的通知（豫科〔2026〕78号，资助50万元/项，截止7月31日）</td>
+          <td>06-17</td>
+          <td><a href="https://kjt.henan.gov.cn/2026/06-17/3366796.html" target="_blank">查看原文</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag tag-deadline">截止6/29</span>关于组织申报2026年第一批金属制品智能制造产业研发联合基金重点、一般项目的通知（重点项目100-300万元，一般项目20-50万元）</td>
+          <td>06-12</td>
+          <td><a href="https://www.hnlykfq.gov.cn/2026/06-12/1067301.html" target="_blank">查看转载</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dept-block">
+      <div class="dept-title"><span class="icon"></span>河南省文化和旅游厅</div>
+      <div class="no-data">该时段内未搜索到申报类通知。（此前发布的研学旅游奖补资金申报、数字化奖补资金申报通知均在3-4月发布。）</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>数据来源：各级政府官方网站公开信息 | 汇总时间：2026年6月25日</p>
+  <p>注意：部分政府网站存在访问限制或搜索引擎收录延迟，建议直接访问各部门官网"通知公告"栏目获取最完整信息。</p>
+</footer>
+
+</div>
+
+<script>
+function toggle(header) {
+  const body = header.nextElementSibling;
+  const arrow = header.querySelector('.arrow');
+  if (body.style.display === 'none') {
+    body.style.display = '';
+    header.classList.remove('collapsed');
+  } else {
+    body.style.display = 'none';
+    header.classList.add('collapsed');
+  }
+}
+</script>
+</body>
+</html>
